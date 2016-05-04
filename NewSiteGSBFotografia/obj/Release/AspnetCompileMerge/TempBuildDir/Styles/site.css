@@ -1,0 +1,38 @@
+﻿body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 60%;
+}
+
+.subtexto {
+    text-align: center;
+    font-size: 16px;
+    color: lightgray;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px #424242;
+}
+
+.galerias {
+    padding-top: 70px;
+    padding-bottom: 600px;
+}
+
+.sobre {
+    padding-top: 70px;
+    padding-bottom: 600px;
+}
+
+.contato {
+    padding-top: 70px;
+    padding-bottom: 200px;
+}

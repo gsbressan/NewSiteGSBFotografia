@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Gustavo S. Bressan - Fotografia</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/site.css" rel="stylesheet" />
+    <link href="Styles/galeria.css" rel="stylesheet" />
+    <link href="Styles/login.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Menu de navegação-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#galerias">Galerias</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <!--<form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Procurar">
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </form>-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#openLogin" class="nav navbar-nav">Login</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--Container principal - HOME-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img src="Resources/NovaLogo_GSB.png" id="logo" />
+                        <br />
+                        <p class="subtexto">Eternizando momentos</p>
+                        <p class="subtexto">Fotografia de eventos sociais, corporativos e retratos</p>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!--Carrosel com as melhores imagens-->
+                    <div id="Carrosel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Carrosel" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carrosel" data-slide-to="1"></li>
+                            <li data-target="#Carrosel" data-slide-to="2"></li>
+                            <li data-target="#Carrosel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="Resources/IMG_2323.jpg" alt="Monorail Sunset">
+                            </div>
+
+                            <div class="item">
+                                <img src="Resources/IMG_4552.jpg" alt="The Calangles Rock Band">
+                            </div>
+
+                            <div class="item">
+                                <img src="Resources/_MG_9654.jpg" alt="Love">
+                            </div>
+
+                            <div class="item">
+                                <img src="Resources/_MG_5385.jpg" alt="Mother love">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#Carrosel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#Carrosel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Container principal - GALERIAS-->
+    <div class="container galerias" id="galerias">
+        <p class="subtexto">Galerias dos eventos mais recentes:</p>
+        <br />
+        <div class="row">
+            <!-- Poster da galeria 1-->
+            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                <div class="thumbnail">
+                    <img src="./Resources/_MG_3403.jpg" alt="Imagem de poster do evento 1" />
+                    <div class="caption">
+                        <h4 id="evento1">Chá de panela - Ana Gabriela e Victor</h4>
+                        <p>lorem ipsum</p>
+                        <p><a href="#openModal" class="btn btn-default" role="button">Ir para a galeria</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Janela modal da galeria 1 -->
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Fechar" class="close">X</a>
+                    <div class="container">
+                        <!--linha 1 da galeria-->
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3353.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3354.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3367.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!--linha 2 da galeria-->
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3401.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3403.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3419.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!--linha 3 da galeria-->
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3466.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3478.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="./Resources/Galeria1/_MG_3479.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Poster da galeria 2-->
+            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                <div class="thumbnail">
+                    <img src="./Resources/IMG_9053.jpg" alt="Imagem de poster do evento 2">
+                    <div class="caption">
+                        <h4 id="evento2">Casamento - Luciana e Leonardo</h4>
+                        <p>lorem ipsum</p>
+                        <p><a href="#" class="btn btn-default" role="button">Ir para a galeria</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Poster da galeria 3-->
+            <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4">
+                <div class="thumbnail">
+                    <img src="./Resources/_MG_3517.jpg" alt="Imagem de poster do evento 3" />
+                    <div class="caption">
+                        <h4 id="evento3">Corporativo - BNP Paribas</h4>
+                        <p>lorem ipsum</p>
+                        <p><a href="#" class="btn btn-default" role="button">Ir para a galeria</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Container principal - SOBRE-->
+    <div class="container sobre" id="sobre">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <img src="./Resources/Guga_Nova_web.jpg" />
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 panel">
+                <p>
+                    Apaixonado por fotografia desde os 6 anos de idade.<br />
+                    Iniciou sua carreira como fotógrafo no site www.nda-night.com fotografando a noite do Rio de Janeiro, onde permaneceu por 4 anos.<br />
+                    Após se desligar do site, seguiu carreira e formou parcerias com empresas e fotógrafos reconhecidos no eixo Rio-Niterói,<br />
+                    além de atuar como free-lancer para o Jornal do Brasil, caderno Niterói, publicando suas fotos na coluna VIP de Estela Prestes<br />
+                    e ter feito trabalhos para Instituto Embratel 21, Banco BNP Paribas S.A., Centro Oncológico de Niterói, Hospital de Clinicas de Niterói,<br />
+                    Petrobrás, Plaza Shopping Niterói, Shoe House, InFlux Produtos de Limpeza, Restaurante BemDito e o Bistrô MAC.<br />
+                    <br />
+                    Atua nos ramos de eventos sociais, eventos corporativos e retratos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Container principal - CONTATO-->
+    <div class="container contato" id="contato">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <br />
+                <p class="subtexto">Pedidos de orçamentos, sugestões e críticas.</p>
+                <br />
+                <div class="container">
+                    <form name="formulario">
+                        <fieldset title="Formulário de contato">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon glyphicon glyphicon-user" id="form-nome"></span>
+                                <input type="text" class="form-control" placeholder="Nome completo" aria-describedby="sizing-addon1" required>
+                            </div><br />
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon glyphicon glyphicon-envelope" id="form-email"></span>
+                                <input type="text" class="form-control" placeholder="E-mail" aria-describedby="sizing-addon1" required>
+                            </div><br />
+                            <textarea class="form-control" rows="15" cols="60" placeholder="Pedido, sugestão ou crítica" aria-describedby="sizing-addon1" required></textarea>
+                            <br />
+                            <button class="btn btn-default" title="Enviar" name="Enviar">Enviar</button>
+                            <button class="btn btn-default" title="Limpar" name="Limpar">Limpar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup modal de login-->
+    <div id="openLogin" class="modalLogin">
+        <div>
+            <a href="#close" title="Fechar" class="close">X</a>
+            <form name="login">
+                <fieldset title="Formulário de login">
+                    <div class="input-group input-group">
+                        <span class="input-group-addon glyphicon glyphicon-user" id="form-username"></span>
+                        <input type="text" class="form-control" placeholder="Nome de Usuário" aria-describedby="sizing-addon1" required>
+                    </div><br />
+                    <div class="input-group input-group">
+                        <span class="input-group-addon glyphicon glyphicon-lock" id="form-password"></span>
+                        <input type="text" class="form-control" placeholder="Senha" aria-describedby="sizing-addon1" required>
+                    </div><br />
+                    <button class="btn btn-default" title="Enviar" name="enviarLogin">Enviar</button>
+                    <button class="btn btn-default" title="Limpar" name="limparLogin">Limpar</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!--Rodapé-->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active"><a href="index.html">Home</a></li>
+            </ol>
+            <footer>
+                <small>
+                    Copyright - GSB - 2015 - All rights reserved
+                </small>
+            </footer>
+        </div>
+    </nav>
+    <!--Scripts-->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
